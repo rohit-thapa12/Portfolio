@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Personal portfolio of Rohit Thapa — computer science student, web developer, and creative designer.">
+    <meta name="author" content="Rohit Thapa">
+    <meta name="theme-color" content="#0b0918">
+
+    <title>Rohit Thapa | Personal Portfolio</title>
+
+    <!-- Google Fonts: Inter + Playfair Display + Fira Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+    <!-- ===================== HEADER / HERO ===================== -->
+    <header>
+
+        <!-- Decorative background orbs -->
+        <div class="hero-bg" aria-hidden="true">
+            <span class="hero-orb hero-orb--1"></span>
+            <span class="hero-orb hero-orb--2"></span>
+            <span class="hero-orb hero-orb--3"></span>
+        </div>
+
+        <!-- Top nav bar: logo left, links right -->
+        <div class="hero-nav-bar">
+            <a href="#top" class="hero-logo" aria-label="Rohit Thapa — home">RT</a>
+
+            <nav aria-label="Primary">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#art">Art</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Hero split: text left, code card right -->
+        <div class="hero-wrapper">
+
+            <div class="hero-left">
+                <div class="hero-badge">Available for opportunities</div>
+
+                <h1>Rohit Thapa Magar</h1>
+
+                <p class="hero-sub">
+                    Computer Science Student &amp; Creative Developer
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn--primary">View Projects</a>
+                    <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+                </div>
+            </div>
+
+            <!-- Decorative code card (visual only) -->
+            <div class="hero-right" aria-hidden="true">
+                <div class="code-card">
+                    <div class="code-card__bar">
+                        <span class="code-card__dot code-card__dot--red"></span>
+                        <span class="code-card__dot code-card__dot--yellow"></span>
+                        <span class="code-card__dot code-card__dot--green"></span>
+                        <span class="code-card__title">portfolio.js</span>
+                    </div>
+                    <div class="code-card__body">
+                        <p><span class="cc-comment">// Hello, World! &#128075;</span></p>
+                        <p><span class="cc-keyword">const</span> <span class="cc-var">dev</span> = {</p>
+                        <p>&nbsp;&nbsp;<span class="cc-prop">name</span>: <span class="cc-string">"Rohit Thapa"</span>,
+                        </p>
+                        <p>&nbsp;&nbsp;<span class="cc-prop">role</span>: <span class="cc-string">"CS Student"</span>,
+                        </p>
+                        <p>&nbsp;&nbsp;<span class="cc-prop">skills</span>: [</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="cc-string">"Web Dev"</span>,</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="cc-string">"Visual Design"</span>,</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="cc-string">"Post-Production"</span>,</p>
+                        <p>&nbsp;&nbsp;],</p>
+                        <p>&nbsp;&nbsp;<span class="cc-prop">available</span>: <span class="cc-bool">true</span>,</p>
+                        <p>};<span class="cc-cursor">|</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Scroll hint -->
+        <div class="hero-scroll-hint" aria-hidden="true">
+            <span>Scroll to explore</span>
+            <span class="hero-scroll-arrow">&#8595;</span>
+        </div>
+
+    </header>
+
+
+    <!-- ===================== MAIN CONTENT ===================== -->
+    <main>
+
+        <!-- About -->
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+
+            <div class="about-layout reveal">
+
+                <figure>
+                    <div class="avatar-ring" aria-hidden="true"></div>
+                    <img src="images/rohit3.jpeg" alt="Portrait photo of Rohit Thapa" width="200" height="200">
+                    <figcaption>Rohit Thapa, CS Student</figcaption>
+                </figure>
+
+                <div class="about-text">
+                    <p>
+                        Hello! I am Rohit Thapa, an undergraduate student studying
+                        Computer Science at Model Institute of Technology. I enjoy
+                        building web applications and learning new technologies.
+                    </p>
+                    <p>
+                        My interests span front-end development, visual design, and
+                        cinematic video production. Outside of coursework, I build
+                        meaningful projects, craft visual identities, and publish
+                        my work on GitHub.
+                    </p>
+                    <a href="#contact" class="btn btn--primary">Get in Touch</a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Skills -->
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Technical Skills</h2>
+
+            <ul class="skills-grid" role="list">
+
+                <li class="skill-card reveal reveal--scale">
+                    <span class="skill-icon" aria-hidden="true">&#127760;</span>
+                    <h3>HTML</h3>
+                    <p>Semantic markup, accessible forms, and W3C-valid document structure.</p>
+                </li>
+
+                <li class="skill-card reveal reveal--scale">
+                    <span class="skill-icon" aria-hidden="true">&#127912;</span>
+                    <h3>CSS</h3>
+                    <p>Responsive design with Flexbox and Grid, animations, and UI layout optimization.</p>
+                </li>
+
+                <li class="skill-card reveal reveal--scale">
+                    <span class="skill-icon" aria-hidden="true">&#9749;</span>
+                    <h3>Java</h3>
+                    <p>Object-oriented programming, data structures, algorithms, and core application development.</p>
+                </li>
+
+                <li class="skill-card reveal reveal--scale">
+                    <span class="skill-icon" aria-hidden="true">&#128024;</span>
+                    <h3>GitHub</h3>
+                    <p>Version control, code collaboration, repository management, and project deployment.</p>
+                </li>
+
+                <li class="skill-card reveal reveal--scale">
+                    <span class="skill-icon" aria-hidden="true">&#10022;</span>
+                    <h3>Visual Design &amp; Brand Identity</h3>
+                    <p>Brand identity systems, digital illustration, typography, and visual communication for print and
+                        digital media.</p>
+                </li>
+
+                <li class="skill-card reveal reveal--scale">
+                    <span class="skill-icon" aria-hidden="true">&#127916;</span>
+                    <h3>Cinematic Post&#8209;Production</h3>
+                    <p>End-to-end video production, professional editing, colour grading, and motion graphics creation.
+                    </p>
+                </li>
+
+            </ul>
+        </section>
+
+
+        <!-- Projects -->
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+
+            <div class="projects-grid">
+
+                <article aria-labelledby="project-gaming-cafe" class="project-card reveal">
+                    <div class="project-card__header">
+                        <h3 id="project-gaming-cafe">Gaming Cafe Management System</h3>
+                        <span class="project-status">Under development</span>
+                    </div>
+                    <p>A comprehensive management system engineered to streamline gaming cafe operations — covering user
+                        authentication, gaming PC management, session tracking, automated billing, and inventory
+                        control.</p>
+                    <p>Features an advanced suite including food &amp; beverage management, tiered membership
+                        programmes, loyalty rewards, live leaderboards, game library cataloguing, and real-time PC
+                        availability monitoring.</p>
+                    <div class="project-card__footer">
+                        <ul class="tech-tags" role="list" aria-label="Technologies used">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>MySQL</li>
+                        </ul>
+                        <a href="https://github.com/rohit-thapa12/Gaming-Cafe-Management-System" target="_blank"
+                            rel="noopener noreferrer" class="btn btn--outline">View on GitHub &#8599;</a>
+                    </div>
+                </article>
+
+                <article aria-labelledby="project-campus-film" class="project-card reveal">
+                    <div class="project-card__header">
+                        <h3 id="project-campus-film">Annual Campus Highlights Reel</h3>
+                        <span class="project-status">Under development</span>
+                    </div>
+                    <p>A professionally produced cinematic documentary capturing the academic year's defining events,
+                        achievements, and milestones at Model Institute of Technology.</p>
+                    <p>Directed and edited end-to-end: pre-production planning, on-location cinematography, colour
+                        grading, motion graphics titling, and original sound design.</p>
+                    <div class="project-card__footer">
+                        <ul class="tech-tags" role="list" aria-label="Technologies used">
+                            <li>Adobe Premiere Pro</li>
+                            <li>After Effects</li>
+                            <li>DaVinci Resolve</li>
+                            <li>Cinematography</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article aria-labelledby="project-cafe-finder" class="project-card reveal">
+                    <div class="project-card__header">
+                        <h3 id="project-cafe-finder">Build a Cafe Finder</h3>
+                        <span class="project-status">Under development</span>
+                    </div>
+                    <p>A web app that helps people discover nearby cafes, filter them by what matters (Wi-Fi, seating,
+                        price, opening hours), and see them on an interactive map.</p>
+                    <div class="project-card__footer">
+                        <ul class="tech-tags" role="list" aria-label="Technologies used">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Maps API</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article aria-labelledby="project-voice-assistant" class="project-card reveal">
+                    <div class="project-card__header">
+                        <h3 id="project-voice-assistant">Create a Vocal Virtual Assistant</h3>
+                        <span class="project-status">Under development</span>
+                    </div>
+                    <p>A voice-controlled assistant that listens to spoken commands, understands the request, and
+                        replies out loud — handling everyday tasks like answering questions, opening apps, and setting
+                        reminders.</p>
+                    <div class="project-card__footer">
+                        <ul class="tech-tags" role="list" aria-label="Technologies used">
+                            <li>Python</li>
+                            <li>Speech Recognition</li>
+                            <li>Text-to-Speech</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article aria-labelledby="project-amazon-analysis" class="project-card reveal">
+                    <div class="project-card__header">
+                        <h3 id="project-amazon-analysis">Analyze Best Selling Amazon Products</h3>
+                        <span class="project-status">Under development</span>
+                    </div>
+                    <p>A data analysis project exploring best-selling Amazon products to uncover patterns in pricing,
+                        ratings, reviews, and categories, presented through clear charts and written findings.</p>
+                    <div class="project-card__footer">
+                        <ul class="tech-tags" role="list" aria-label="Technologies used">
+                            <li>Python</li>
+                            <li>Pandas</li>
+                            <li>Data Visualization</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article aria-labelledby="project-personal-website" class="project-card reveal">
+                    <div class="project-card__header">
+                        <h3 id="project-personal-website">Create a Personal Website</h3>
+                        <span class="project-status">Under development</span>
+                    </div>
+                    <p>A personal website that brings together my projects, skills, and creative work in one place —
+                        designed to be fast, responsive, and accessible on any device.</p>
+                    <div class="project-card__footer">
+                        <ul class="tech-tags" role="list" aria-label="Technologies used">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- Art -->
+        <section id="art" aria-labelledby="art-heading">
+            <h2 id="art-heading">Art</h2>
+            <p class="section-intro">I do art sometimes.</p>
+
+            <div class="art-carousel reveal">
+                <div class="art-track" tabindex="0" role="region"
+                    aria-label="Drawings. Swipe or scroll sideways to browse.">
+                    <figure class="art-slot">
+                        <span class="art-slot__label" aria-hidden="true">Drawing 1</span>
+                        <img src="images/art1.jpeg" alt="Drawing 1 by Rohit Thapa" loading="lazy"
+                            onerror="this.hidden=true">
+                    </figure>
+
+                    <figure class="art-slot">
+                        <span class="art-slot__label" aria-hidden="true">Drawing 2</span>
+                        <img src="images/art2.jpeg" alt="Drawing 2 by Rohit Thapa" loading="lazy"
+                            onerror="this.hidden=true">
+                    </figure>
+
+                    <figure class="art-slot">
+                        <span class="art-slot__label" aria-hidden="true">Drawing 3</span>
+                        <img src="images/art3.jpeg" alt="Drawing 3 by Rohit Thapa" loading="lazy"
+                            onerror="this.hidden=true">
+                    </figure>
+
+                    <figure class="art-slot">
+                        <span class="art-slot__label" aria-hidden="true">Drawing 4</span>
+                        <img src="images/art4.jpeg" alt="Drawing 4 by Rohit Thapa" loading="lazy"
+                            onerror="this.hidden=true">
+                    </figure>
+
+                    <figure class="art-slot">
+                        <span class="art-slot__label" aria-hidden="true">Drawing 5</span>
+                        <img src="images/art5.jpeg" alt="Drawing 5 by Rohit Thapa" loading="lazy"
+                            onerror="this.hidden=true">
+                    </figure>
+                </div>
+                <div class="art-controls">
+                    <button type="button" class="art-btn" data-dir="-1" aria-label="Previous drawing">&#8592;</button>
+                    <span class="art-count" aria-live="polite">1 / 5</span>
+                    <button type="button" class="art-btn" data-dir="1" aria-label="Next drawing">&#8594;</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Me</h2>
+
+            <p class="contact-intro">
+                Have a project in mind or want to collaborate? I'd love to hear from you.
+            </p>
+
+            <form action="#" method="post" class="contact-form reveal" novalidate>
+
+                <div class="form-field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email"
+                        required>
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Write your message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--submit">
+                    Send Message &#8594;
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-name">Rohit Thapa Magar</p>
+            <p class="footer-copy">&copy; 2026 Rohit Thapa. All rights reserved.</p>
+            <a href="#top" class="back-to-top">&#8593; Back to top</a>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
